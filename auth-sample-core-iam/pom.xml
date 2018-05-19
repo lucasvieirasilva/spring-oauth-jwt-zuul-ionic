@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.lvds</groupId>
+	<artifactId>auth-sample-core-iam</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+
+	<name>auth-sample-core-iam</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring-data-commons.version>1.13.10.RELEASE</spring-data-commons.version>
+		<spring-security-core.version>4.2.4.RELEASE</spring-security-core.version>
+		<spring-data-jpa.version>1.11.10.RELEASE</spring-data-jpa.version>
+		<spring-security-oauth2.version>2.0.14.RELEASE</spring-security-oauth2.version>
+		<spring-context.version>4.3.14.RELEASE</spring-context.version>
+		<hibernate.version>5.0.12.Final</hibernate.version>
+		<spring-social-facebook.version>2.0.3.RELEASE</spring-social-facebook.version>
+		<spring-social-security.version>1.1.4.RELEASE</spring-social-security.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.lvds</groupId>
+			<artifactId>auth-sample-core-entity</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>${spring-security-oauth2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-context.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-facebook</artifactId>
+			<version>${spring-social-facebook.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-security</artifactId>
+			<version>${spring-social-security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

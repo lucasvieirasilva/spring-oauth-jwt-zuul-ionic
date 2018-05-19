@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.cloud: DEBUG
+    org.springframework.web: WARN
+
+server:
+  port: 8080
+
+spring:
+  aop:
+    proxy-target-class: true
+
+zuul:
+  sensitive-headers: Cookie, Set-Cookie
+  routes:
+    resource: 
+      path: /api/**
+      url: http://localhost:9001/resource

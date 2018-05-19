@@ -1,0 +1,17 @@
+server:
+  port: 9999
+  context-path: /uaa
+ 
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.18.10:3306/mobile_dev
+    username: root
+    password: Sample@2018
+  social:
+    facebook:
+      app-id: 2095080710781661
+      app-secret: 8a32e0a744805c6f335900aceec427dc  
+    
+app:
+  oauth2:
+    sigingkey: lvds@2018

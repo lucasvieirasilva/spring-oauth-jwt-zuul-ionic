@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      OAuth Project
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button *ngIf="!authenticatedUser" ion-button block (click)="login()">Login</button>
+
+  <h1 *ngIf="authenticatedUser" >Bem vindo {{ authenticatedUser }}</h1>
+
+  <button *ngIf="authenticatedUser" ion-button block (click)="logout()">Logout</button>
+</ion-content>
