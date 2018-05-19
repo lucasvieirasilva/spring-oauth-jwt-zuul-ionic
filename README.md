@@ -1,1 +1,1 @@
-"# spring-oauth-jwt-zuul-ionic" 
+# spring-oauth-jwt-zuul-ionic
